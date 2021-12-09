@@ -15,31 +15,39 @@ This is a spearated repository for [ARX](https://github.com/arx-deidentifier/arx
       
 You should get this output:
 
-                - Time needed: 0.03s
-                - Information loss: 0.5874010519681996 / 0.5874010519681996
-                - Optimal generalization
-                  * zipcode: 3/5
-                  * gender : 0/1
-                  * age    : 2/2
-                - Statistics
-                EquivalenceClassStatistics {
-                - Average equivalence class size = 3.5
-                - Maximal equivalence class size = 4
-                - Minimal equivalence class size = 3
-                - Number of equivalence classes = 2
-                - Number of records = 7
-                - Number of suppressed records = 0
-                }
-                - Transformed data:
-                  [age, gender, zipcode]
-                  [*, male, 81***]
-                  [*, female, 81***]
-                  [*, male, 81***]
-                  [*, female, 81***]
-                  [*, female, 81***]
-                  [*, male, 81***]
-                  [*, male, 81***]
-                  
+            - Input data:
+                [age, gender, zipcode]
+                [34, male, 81667]
+                [45, female, 81675]
+                [66, male, 81925]
+                [70, female, 81931]
+                [34, female, 81931]
+                [70, male, 81931]
+                [45, male, 81931]
+              - Time needed: 0.03s
+              - Information loss: 0.5874010519681996 / 0.5874010519681996
+              - Optimal generalization
+                * zipcode: 3/5
+                * gender : 0/1
+                * age    : 2/2
+              - Statistics
+             EquivalenceClassStatistics {
+             - Average equivalence class size = 3.5
+             - Maximal equivalence class size = 4
+             - Minimal equivalence class size = 3
+             - Number of equivalence classes = 2
+             - Number of records = 7
+             - Number of suppressed records = 0
+             }
+              - Transformed data:
+                [age, gender, zipcode]
+                [*, male, 81***]
+                [*, female, 81***]
+                [*, male, 81***]
+                [*, female, 81***]
+                [*, female, 81***]
+                [*, male, 81***]
+                [*, male, 81***]                  
 
 **List of examples:**
 

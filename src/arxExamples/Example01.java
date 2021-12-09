@@ -43,6 +43,14 @@ public class Example01 extends ExamplesUtils  {
         data.add("70", "male", "81931");
         data.add("45", "male", "81931");
 
+        // Print data 
+        System.out.println(" - Input data:");
+        Iterator<String[]> inputDataIterator = data.getHandle().iterator();
+        while (inputDataIterator.hasNext()) {
+            System.out.print("   ");
+            System.out.println(Arrays.toString(inputDataIterator.next()));
+        }
+
         // Define hierarchies
         DefaultHierarchy age = Hierarchy.create();
         age.add("34", "<50", "*");
@@ -65,6 +73,9 @@ public class Example01 extends ExamplesUtils  {
         data.getDefinition().setAttributeType("gender", gender);
         data.getDefinition().setAttributeType("zipcode", zipcode);
 
+        //TODO: access and print definitions  
+        
+        
         // Create an instance of the anonymizer
         ARXAnonymizer anonymizer = new ARXAnonymizer();
         ARXConfiguration config = ARXConfiguration.create();
@@ -73,15 +84,15 @@ public class Example01 extends ExamplesUtils  {
 
         ARXResult result = anonymizer.anonymize(data, config);
 
-        // Print info
+        // Print info, this function can be found in ExamplesUtils.java 
         printResult(result, data);
 
-        // Process results
+        // Print results
         System.out.println(" - Transformed data:");
-        Iterator<String[]> transformed = result.getOutput(false).iterator();
-        while (transformed.hasNext()) {
+        Iterator<String[]> transformedDataIterator = result.getOutput(false).iterator();
+        while (transformedDataIterator.hasNext()) {
             System.out.print("   ");
-            System.out.println(Arrays.toString(transformed.next()));
-        }
-    }
-}
+            System.out.println(Arrays.toString(transformedDataIterator.next()));
+        }//while 
+    }//main
+}//class              
