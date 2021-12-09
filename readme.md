@@ -51,7 +51,7 @@ You should get this output:
 
 **List of examples:**
 
-1. [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java), in this example these concepts are exaplained: 
+1. [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java), in this example these concepts are exaplained: 
      - creating data and hierarchy manually  
 
             DefaultData data = Data.create();
@@ -69,8 +69,8 @@ You should get this output:
      - Connect hierarchy on the data, apply anoynimisation, print the input data and the results.  
    The output should be similar to the above output.
    
-2. [Example02.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example02.java): In this example these concepts are exaplained: 
-   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java), it also shows how to read/write data from/to csv files. The output should look like:
+2. [Example02.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example02.java): In this example these concepts are exaplained: 
+   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java), it also shows how to read/write data from/to csv files. The output should look like:
 
                    Reading data from  data/test.csv ....!!!
                 - Time needed: 0.02s
@@ -92,7 +92,7 @@ You should get this output:
                 Result is saved in data/test_result.csv
                 Done!
 
-3. [Example03.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example03.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java).
+3. [Example03.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example03.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java).
 
         
             - Time needed: 0.02s
@@ -118,7 +118,7 @@ You should get this output:
               [*, male, 819**]
               [*, male, 819**]
   
-4. [Example04.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example04.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java). It also shows: how to get information about the data, define hierarchy using AttributeType. The output should look like this: 
+4. [Example04.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example04.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows: how to get information about the data, define hierarchy using AttributeType. The output should look like this: 
 
             - inHandle.getNumRows()       :7
             - inHandle.getNumColumns()    :3
@@ -147,3 +147,28 @@ You should get this output:
               [*, male, 816**]
               [*, female, 816**]
 
+5. [Example05.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example05.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows: how to use two privacy models at the same time. The output should look like this: 
+
+            - Time needed: 0.02s
+            - Information loss: 0.41421356237309515 / 0.41421356237309515
+            - Optimal generalization
+              * zipcode: 3/5
+              * gender : 0/1
+            - Statistics
+            EquivalenceClassStatistics {
+            - Average equivalence class size = 3.5
+            - Maximal equivalence class size = 4
+            - Minimal equivalence class size = 3
+            - Number of equivalence classes = 2
+            - Number of records = 7
+            - Number of suppressed records = 0
+            }
+            - Transformed data:
+              [age, gender, zipcode]
+              [34, male, 81***]
+              [45, female, 81***]
+              [66, male, 81***]
+              [70, female, 81***]
+              [34, female, 81***]
+              [70, male, 81***]
+              [45, male, 81***]

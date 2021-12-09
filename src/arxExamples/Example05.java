@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -33,13 +33,13 @@ import org.deidentifier.arx.criteria.KAnonymity;
 import org.deidentifier.arx.criteria.RecursiveCLDiversity;
 
 /**
- * This class implements an example on how to use the API by directly providing
- * the input datasets.
+ * This class implements an example on how to use the API
+ * Using two privacy models at the same time 
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example05 extends Example {
+public class Example05 extends ExamplesUtils {
 
     /**
      * Entry point.
