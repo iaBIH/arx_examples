@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -44,7 +44,7 @@ import cern.colt.Arrays;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example25 extends Example {
+public class Example25 extends ExampleUtils {
 
     /**
      * Entry point.

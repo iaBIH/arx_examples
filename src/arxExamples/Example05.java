@@ -39,7 +39,7 @@ import org.deidentifier.arx.criteria.RecursiveCLDiversity;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example05 extends ExamplesUtils {
+public class Example05 extends ExampleUtils {
 
     /**
      * Entry point.

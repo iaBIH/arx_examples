@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ import org.deidentifier.arx.metric.Metric;
  *
  * @author Fabian Prasser
  */
-public class Example41 extends Example {
+public class Example41 extends ExampleUtils {
 
     /**
      * Entry point.

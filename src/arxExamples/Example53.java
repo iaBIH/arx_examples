@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.awt.Desktop;
 import java.io.File;
@@ -43,7 +43,7 @@ import org.deidentifier.arx.metric.Metric;
  *
  * @author Fabian Prasser
  */
-public class Example53 extends Example {
+public class Example53 extends ExampleUtils {
     
     /**
      * Loads a dataset from disk

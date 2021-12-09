@@ -118,7 +118,7 @@ You should get this output:
               [*, male, 819**]
               [*, male, 819**]
   
-4. [Example04.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example04.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows: how to get information about the data, define hierarchy using AttributeType. The output should look like this: 
+4. [Example04.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example04.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows how to get information about the data, define hierarchy using AttributeType. The output should look like this: 
 
             - inHandle.getNumRows()       :7
             - inHandle.getNumColumns()    :3
@@ -147,7 +147,7 @@ You should get this output:
               [*, male, 816**]
               [*, female, 816**]
 
-5. [Example05.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example05.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows: how to use two privacy models at the same time. The output should look like this: 
+5. [Example05.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example05.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example01.java). It also shows how to use two privacy models at the same time. The output should look like this: 
 
             - Time needed: 0.02s
             - Information loss: 0.41421356237309515 / 0.41421356237309515

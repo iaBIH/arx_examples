@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 
@@ -38,7 +38,7 @@ import org.deidentifier.arx.risk.RiskModelSampleWildcard;
  *
  * @author Fabian Prasser
  */
-public class Example56 extends Example {
+public class Example56 extends ExampleUtils {
 
     /**
      * Entry point.

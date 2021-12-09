@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 
@@ -34,13 +34,14 @@ import org.deidentifier.arx.criteria.KAnonymity;
 import org.deidentifier.arx.metric.Metric;
 
 /**
- * This class implements an example on how to apply the d-presence privacy model
- * and create a research subset by providing a complex data selector.
+ * This class implements an example on:
+ *   -  how to apply the d-presence privacy model
+ *   -  how to create a research subset by providing a complex data selector.
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example12 extends Example {
+public class Example12 extends ExampleUtils {
 
     /**
      * Entry point.
@@ -65,17 +66,11 @@ public class Example12 extends Example {
 
         // Define research subset
         DataSelector selector = DataSelector.create(data)
-                                .begin()
-                                    .field("identifier").equals("b")
-                                    .and()
-                                    .field("nationality").equals("Canada")
-                                .end()
-                                .or().field("identifier").equals("c")
-                                .or().field("name").equals("Christine")
-                                .or().equals("Frank")
-                                .or().equals("Harry")
-                                .or().equals("Iris");
-        
+                                .begin().field("identifier").equals("b").and().field("nationality").equals("Canada").end()
+                                .or().field("identifier").equals("c")  
+                                .or().field("name").equals("Christine").or().equals("Frank").or().equals("Harry").or().equals("Iris");
+
+        // Define research subset
         DataSubset subset = DataSubset.create(data, selector);
 
         // Define hierarchies

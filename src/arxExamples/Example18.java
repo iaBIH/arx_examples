@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -42,7 +42,7 @@ import cern.colt.Arrays;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example18 extends Example {
+public class Example18 extends ExampleUtils {
 
     /**
      * Entry point.

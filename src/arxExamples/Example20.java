@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.util.Arrays;
 
@@ -28,7 +28,7 @@ import org.deidentifier.arx.aggregates.AggregateFunction.AggregateFunctionBuilde
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example20 extends Example {
+public class Example20 extends ExampleUtils {
 
     /**
      * Entry point.

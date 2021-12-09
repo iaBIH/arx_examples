@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -33,7 +33,7 @@ import org.deidentifier.arx.aggregates.HierarchyBuilderIntervalBased.Range;
  * @author Florian Kohlmayer
  * @author Igor Vujosevic
  */
-public class Example26 extends Example {
+public class Example26 extends ExampleUtils {
     
     /** 
      * Main

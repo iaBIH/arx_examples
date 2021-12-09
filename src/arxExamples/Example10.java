@@ -15,9 +15,11 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package  arxExamples;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
 
 import org.deidentifier.arx.ARXAnonymizer;
 import org.deidentifier.arx.ARXConfiguration;
@@ -39,7 +41,7 @@ import org.deidentifier.arx.metric.Metric;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example10 extends Example {
+public class Example10 extends ExampleUtils {
 
     /**
      * Entry point.
@@ -64,6 +66,17 @@ public class Example10 extends Example {
         
         // Define research subset
         DefaultData subsetData = Data.create();
+        //String attributes [] ;
+//        List<String> dataAttributes = new ArrayList<>();
+//        for (int i=0; i<data.getHandle().getNumColumns();i++) {
+//            dataAttributes.add(data.getHandle().getAttributeName(i));
+//        }
+        //TODO: idea, implement adding list or list of lists
+        //TODO: idea, implement getColumn to a list
+        //TODO: idea, implement getRow to a list
+        //TODO: idea, implement getData to a list of lists
+        //TODO: idea use dataframes specialized library e.g. tablesaw
+                
         subsetData.add("identifier", "name", "zip", "age", "nationality", "sen");
         subsetData.add("b", "Bob", "47903", "59", "Canada", "1");
         subsetData.add("c", "Christine", "47906", "42", "USA", "1");

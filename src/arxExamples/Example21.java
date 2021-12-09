@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -36,7 +36,7 @@ import org.deidentifier.arx.DataType;
  * @author Karol Babioch
  * @author Fabian Prasser
  */
-public class Example21 extends Example {
+public class Example21 extends ExampleUtils {
     
     /**
      * Main entry point.

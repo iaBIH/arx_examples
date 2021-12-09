@@ -34,7 +34,7 @@ import org.deidentifier.arx.DataHandle;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public abstract class ExamplesUtils {
+public abstract class ExampleUtils {
 
     /**
      * Prints a given data handle.

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -42,7 +42,7 @@ import org.deidentifier.arx.criteria.KAnonymity;
  * @author Florian Kohlmayer
  * @author Fabian Prasser
  */
-public class Example28 extends Example {
+public class Example28 extends ExampleUtils {
     
     /**
      * Main entry point.

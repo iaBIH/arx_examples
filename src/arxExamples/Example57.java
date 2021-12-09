@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -42,7 +42,7 @@ import org.deidentifier.arx.risk.RiskModelSampleWildcard;
  *
  * @author Fabian Prasser
  */
-public class Example57 extends Example {
+public class Example57 extends ExampleUtils {
     
     /**
      * Loads a dataset from disk

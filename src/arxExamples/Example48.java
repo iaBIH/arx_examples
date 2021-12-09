@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -36,7 +36,7 @@ import org.deidentifier.arx.criteria.OrderedDistanceTCloseness;
  * 
  * @author Fabian Prasser
  */
-public class Example48 extends Example {
+public class Example48 extends ExampleUtils {
     
     /**
      * Entry point.

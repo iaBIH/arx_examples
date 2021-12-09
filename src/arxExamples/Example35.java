@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package   arxExamples;
 
 import java.io.IOException;
 

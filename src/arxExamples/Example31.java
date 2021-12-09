@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package   arxExamples;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ import org.deidentifier.arx.criteria.KAnonymity;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example31 extends Example {
+public class Example31 extends ExampleUtils {
     
     /**
      * Entry point.

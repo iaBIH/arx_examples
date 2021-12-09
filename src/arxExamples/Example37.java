@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 
@@ -38,7 +38,7 @@ import org.deidentifier.arx.criteria.EDDifferentialPrivacy;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example37 extends Example {
+public class Example37 extends ExampleUtils {
 
     /**
      * Entry point.

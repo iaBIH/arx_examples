@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 
@@ -35,7 +35,7 @@ import org.deidentifier.arx.criteria.KMap;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example45 extends Example {
+public class Example45 extends ExampleUtils {
     
     /**
      * Entry point.

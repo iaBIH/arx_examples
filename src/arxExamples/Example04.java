@@ -40,7 +40,7 @@ import org.deidentifier.arx.criteria.KAnonymity;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example04 extends ExamplesUtils {
+public class Example04 extends ExampleUtils {
 
     /**
      * Entry point.

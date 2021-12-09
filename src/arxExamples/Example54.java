@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -45,7 +45,7 @@ import org.deidentifier.arx.metric.Metric;
  *
  * @author Fabian Prasser
  */
-public class Example54 extends Example {
+public class Example54 extends ExampleUtils {
     
     /**
      * Loads a dataset from disk

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.text.ParseException;
 import java.util.Date;
@@ -32,7 +32,7 @@ import org.deidentifier.arx.DataType.DataTypeDescription;
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example17 extends Example {
+public class Example17 extends ExampleUtils {
 
     /**
      * Entry point.
