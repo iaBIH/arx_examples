@@ -1,3 +1,4 @@
 .class
+/bin
 /build
 /org/deidentifier/arx/examples/*.class
