@@ -32,9 +32,9 @@ import org.deidentifier.arx.Data.DefaultData;
 import org.deidentifier.arx.criteria.KAnonymity;
 
 /**
- * This class implements an example on how to use the API by directly providing
- * the input datasets.
- *
+ * This class implements an example on how to use the API by
+ * 
+ * 
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */

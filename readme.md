@@ -70,7 +70,7 @@ You should get this output:
    The output should be similar to the above output.
    
 2. [Example02.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example02.java): In this example these concepts are exaplained: 
-   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java) and add saving the data and the results to csv file. The output should look like:
+   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java), it also shows how to read/write data from/to csv files. The output should look like:
 
                    Reading data from  data/test.csv ....!!!
                 - Time needed: 0.02s
@@ -92,5 +92,29 @@ You should get this output:
                 Result is saved in data/test_result.csv
                 Done!
 
+3. [Example03.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example03.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java).
+
         
+            - Time needed: 0.02s
+            - Information loss: 0.3333333332999999 / 0.3333333332999999
+            - Optimal generalization
+              * zipcode: 2/5
+            - Statistics
+            EquivalenceClassStatistics {
+            - Average equivalence class size = 3.5
+            - Maximal equivalence class size = 5
+            - Minimal equivalence class size = 2
+            - Number of equivalence classes = 2
+            - Number of records = 7
+            - Number of suppressed records = 0
+            }
+            - Transformed data:
+              [age, gender, zipcode]
+              [*, male, 816**]
+              [*, female, 816**]
+              [*, male, 819**]
+              [*, female, 819**]
+              [*, female, 819**]
+              [*, male, 819**]
+              [*, male, 819**]
   
