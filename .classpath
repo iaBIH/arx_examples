@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/arx-3.9-main.jar"/>
+	<classpathentry kind="lib" path="/home/ibr/myGitHub/BIH/arxExamples/libs/arx-3.9-main.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
