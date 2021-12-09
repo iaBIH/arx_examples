@@ -118,3 +118,32 @@ You should get this output:
               [*, male, 819**]
               [*, male, 819**]
   
+4. [Example04.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example04.java):    - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java). It also shows: how to get information about the data, define hierarchy using AttributeType. The output should look like this: 
+
+            - inHandle.getNumRows()       :7
+            - inHandle.getNumColumns()    :3
+            - inHandle.getAttributeName(0):age
+            - inHandle.getValue(0,0)      :34
+            - Time needed: 0.02s
+            - Information loss: 0.3333333332999999 / 0.3333333332999999
+            - Optimal generalization
+              * zipcode: 2/5
+            - Statistics
+            EquivalenceClassStatistics {
+            - Average equivalence class size = 3.5
+            - Maximal equivalence class size = 5
+            - Minimal equivalence class size = 2
+            - Number of equivalence classes = 2
+            - Number of records = 7
+            - Number of suppressed records = 0
+            }
+            - Transformed data:
+              [age, gender, zipcode]
+              [*, male, 819**]
+              [*, female, 819**]
+              [*, female, 819**]
+              [*, male, 819**]
+              [*, male, 819**]
+              [*, male, 816**]
+              [*, female, 816**]
+

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.deidentifier.arx.examples;
+package arxExamples;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -34,12 +34,13 @@ import org.deidentifier.arx.DataType;
 import org.deidentifier.arx.criteria.KAnonymity;
 
 /**
- * This class implements an example on how to use the API for tools such as GUIs.
+ * This class implements an example on how to use the API 
+ * Using GUI
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer
  */
-public class Example04 extends Example {
+public class Example04 extends ExamplesUtils {
 
     /**
      * Entry point.
@@ -64,11 +65,12 @@ public class Example04 extends Example {
         DataHandle inHandle = data.getHandle();
 
         // Read the encoded data
-        inHandle.getNumRows();
-        inHandle.getNumColumns();
-        inHandle.getAttributeName(0);
-        inHandle.getValue(0, 0);
+        System.out.println(" - inHandle.getNumRows()       :" + inHandle.getNumRows());
+        System.out.println(" - inHandle.getNumColumns()    :" + inHandle.getNumColumns());
+        System.out.println(" - inHandle.getAttributeName(0):" + inHandle.getAttributeName(0));
+        System.out.println(" - inHandle.getValue(0,0)      :" + inHandle.getValue(0, 0));
 
+        
         // Define hierarchy. Only excerpts for readability
         DefaultHierarchy zipcode = Hierarchy.create();
         zipcode.add("81667", "8166*", "816**", "81***", "8****", "*****");
@@ -76,13 +78,12 @@ public class Example04 extends Example {
         zipcode.add("81925", "8192*", "819**", "81***", "8****", "*****");
         zipcode.add("81931", "8193*", "819**", "81***", "8****", "*****");
 
-        // Create a data definition
-        data.getDefinition()
-            .setAttributeType("age", AttributeType.IDENTIFYING_ATTRIBUTE);
-        data.getDefinition()
-            .setAttributeType("gender", AttributeType.INSENSITIVE_ATTRIBUTE);
-        data.getDefinition().setAttributeType("zipcode", zipcode);
+        // Create a data definition using AttributeType
+        data.getDefinition().setAttributeType("age"   ,  AttributeType.IDENTIFYING_ATTRIBUTE);
+        data.getDefinition().setAttributeType("gender",  AttributeType.INSENSITIVE_ATTRIBUTE);
 
+        // Create a data definition manually
+        data.getDefinition().setAttributeType("zipcode", zipcode);        
         data.getDefinition().setDataType("zipcode", DataType.DECIMAL);
 
         // Create an instance of the anonymizer
