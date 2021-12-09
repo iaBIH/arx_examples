@@ -2,7 +2,7 @@
 
 This is a spearated repository for [ARX](https://github.com/arx-deidentifier/arx), the open source data anonymization software. These examples can be used as a  developer tutorial to help get into the ARX code.
 
-**Getting started **
+**Getting started:**
 
 1. Clone or download this repository
 2. Open eclipse, create a new java project, then point to the downloaded folder
