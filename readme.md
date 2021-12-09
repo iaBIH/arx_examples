@@ -51,8 +51,8 @@ You should get this output:
 
 **List of examples:**
 
-1. [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java): In this example these concepts are exaplained: 
-   - creating data and hierarchy manually  
+1. [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java), in this example these concepts are exaplained: 
+     - creating data and hierarchy manually  
 
             DefaultData data = Data.create();
             data.add("age", "gender", "zipcode");
@@ -66,6 +66,31 @@ You should get this output:
             age.add("34", "<50", "*");
             age.add("45", "<50", "*");
         
-   - Connect hierarchy on the data, apply anoynimisation, print the input data and the results.  
+     - Connect hierarchy on the data, apply anoynimisation, print the input data and the results.  
+   The output should be similar to the above output.
+   
 2. [Example02.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example02.java): In this example these concepts are exaplained: 
-   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java) and add saving the data and the results to csv file.     
+   - Same as [Example01.java](https://github.com/iaBIH/arx_examples/blob/master/org/deidentifier/arx/examples/Example01.java) and add saving the data and the results to csv file. The output should look like:
+
+                   Reading data from  data/test.csv ....!!!
+                - Time needed: 0.02s
+                - Information loss: 0.30055597162146275 / 0.30055597162146275
+                - Optimal generalization
+                  * zipcode: 3/5
+                  * gender : 0/1
+                  * age    : 2/2
+                - Statistics
+                EquivalenceClassStatistics {
+                - Average equivalence class size = 3.5
+                - Maximal equivalence class size = 4
+                - Minimal equivalence class size = 3
+                - Number of equivalence classes = 2
+                - Number of records = 7
+                - Number of suppressed records = 0
+                }
+                - Writing data...
+                Result is saved in data/test_result.csv
+                Done!
+
+        
+  

@@ -28,8 +28,8 @@ import org.deidentifier.arx.Data;
 import org.deidentifier.arx.criteria.KAnonymity;
 
 /**
- * This class implements an example on how to use the API by providing CSV files
- * as input.
+ * This class implements an example on how to use the API.
+ * It shows how read/write data from/to csv files 
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer
@@ -43,8 +43,12 @@ public class Example02 extends ExamplesUtils {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
+
+        String inputPath  = "data/test.csv";
+        String outputPath = "data/test_result.csv";
         
-        Data data = Data.create("data/test.csv", StandardCharsets.UTF_8, ';');
+        System.out.println("Reading data from  "+ inputPath +" ....!!!");
+        Data data = Data.create(inputPath, StandardCharsets.UTF_8, ';');
         
         // TODO: simplify the process:
         //   e.g. reading the files from a folder
@@ -66,10 +70,12 @@ public class Example02 extends ExamplesUtils {
         printResult(result, data);
         
         // Write results
-        System.out.print(" - Writing data...");
-        result.getOutput(false).save("data/test_anonymized.csv", ';');
-        result.getOutput(false).save("data/test_anonymized.csv", ';');
+        //TODO: simplify the process by adding a new write function e.g.
+        // result.write(path), result.write(path,separator)
 
+        System.out.println(" - Writing data...");
+        result.getOutput(false).save(outputPath, ';');        
+        System.out.println("Result is saved in "+ outputPath);
         System.out.println("Done!");
     }
 }
