@@ -68,10 +68,10 @@ public class Example17 extends ExampleUtils {
 
         // 3. Obtain data in specific formats
         DefaultData data = Data.create();
-        data.add("identifier", "name", "zip", "age", "nationality", "sen");
-        data.add("a", "Alice", "47906", "35", "USA", "1.1.2013");
-        data.add("b", "Bob", "47903", "59", "Canada", "1.1.2013");
-        data.add("c", "Christine", "47906", "42", "USA", "1.1.2013");
+        data.add("identifier", "name",   "zip",    "age", "nationality", "sen");
+        data.add("a",        "Alice",     "47906", "35",    "USA",      "1.1.2013");
+        data.add("b",        "Bob",       "47903", "59",    "Canada",   "1.1.2013");
+        data.add("c",        "Christine", "47906", "42",    "USA",      "1.1.2013");
         data.add("d", "Dirk", "47630", "18", "Brazil", "1.1.2013");
         data.add("e", "Eunice", "47630", "22", "Brazil", "1.1.2013");
         data.add("f", "Frank", "47633", "63", "Peru", "1.1.2013");
@@ -84,7 +84,7 @@ public class Example17 extends ExampleUtils {
         
         DataHandle handle = data.getHandle();
         double value1 = handle.getDouble(2, 2);
-        Date value2 = handle.getDate(2, 5);
+        Date value2   = handle.getDate(2, 5);
         
         System.out.println("Double: "+value1);
         System.out.println("Date: "+value2);

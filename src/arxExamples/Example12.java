@@ -64,6 +64,17 @@ public class Example12 extends ExampleUtils {
         data.add("h", "Harry", "48972", "47", "Bulgaria", "1");
         data.add("i", "Iris", "48970", "52", "France", "1");
 
+        // Get a specific column          
+        DataSelector idSelector = DataSelector.create(data).field("identifier").equals("*");
+        DataSubset idSubset = DataSubset.create(data, idSelector);
+        // Print column
+        System.out.println(" - identifier column:");
+        print(data.getHandle().getView().iterator());
+
+        // Get a specific row          
+//        DataSelector idData = DataSelector.create(data).field("identifier").equals("*");
+//        DataSubset   idSubset = DataSubset.create(data, idSelector);
+
         // Define research subset
         DataSelector selector = DataSelector.create(data)
                                 .begin().field("identifier").equals("b").and().field("nationality").equals("Canada").end()
@@ -126,7 +137,7 @@ public class Example12 extends ExampleUtils {
         System.out.println(" - Input data:");
         print(data.getHandle().iterator());
 
-        // Print input
+        // Print subset data
         System.out.println(" - Input research subset:");
         print(data.getHandle().getView().iterator());
 

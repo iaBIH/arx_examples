@@ -1,6 +1,6 @@
 # ARX Developer Tutorials 
 
-This is a spearated repository for [ARX](https://github.com/arx-deidentifier/arx), the open source data anonymization software. These examples can be used as a  developer tutorial to help get into the ARX code.
+This is a spearated repository for [ARX](https://github.com/arx-deidentifier/arx) examples. ARX is an open source data anonymization software. These examples can be used as a  developer tutorial to help get into the ARX code and the data anonymization topic.
 
 **Getting started:**
 

@@ -73,7 +73,7 @@ public class Example18 extends ExampleUtils {
 
         // Define grouping fanouts
         builder.getLevel(0).addGroup(10, dateType.createAggregate().createIntervalFunction());
-        builder.getLevel(1).addGroup(2, dateType.createAggregate().createIntervalFunction());
+        builder.getLevel(1).addGroup(2 , dateType.createAggregate().createIntervalFunction());
 
         // Alternatively
         // builder.setAggregateFunction(AggregateFunction.INTERVAL(DataType.INTEGER));
