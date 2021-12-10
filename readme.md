@@ -172,3 +172,21 @@ You should get this output:
               [34, female, 81***]
               [70, male, 81***]
               [45, male, 81***]
+6. [Example06.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example06.java):  Similar to 5 
+7. [Example07.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example07.java):  Similar to 5 
+8. [Example08.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example08.java):  It shows how to apply the t-closeness criterion. 
+9. [Example09.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example09.java):  It shows how to apply the d-presence criterion.
+10. [Example10.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example10.java):  It shows how to use simple data subsets 
+11. [Example11.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example11.java):  It shows how to use data selector 
+12. [Example12.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example12.java):  It shows how to use complex data selector 
+13. [Example13.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example13.java):  It shows how to use multiple sensitive attributes and different privacy models.
+14. [Example14.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example14.java):  It shows how to use loss metrics 
+15. [Not found!!!]()
+16. [Example16.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example16.java):  It shows how to get some statistics aboutthe data e.g. frequencies
+17. [Example17.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example17.java):  It shows how to use data types 
+18. [Example18.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example18.java):  It shows how to use hierarchy builders.
+19. [Example19.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example19.java):  It shows how to use lattice to create different representation of the results.
+20. [Example20.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example20.java):  It shows how to use aggregate functions.
+
+21. [Example21.java](https://github.com/iaBIH/arx_examples/blob/master/src/arxExamples/Example21.java):  It shows how to import data from different sources.
+
