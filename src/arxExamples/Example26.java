@@ -26,8 +26,7 @@ import org.deidentifier.arx.aggregates.HierarchyBuilderIntervalBased.Interval;
 import org.deidentifier.arx.aggregates.HierarchyBuilderIntervalBased.Range;
 
 /**
- * This class implements examples of how to use an interval-based hierarchy builder
- * with high precision .
+ * This class implements examples of how to use an interval-based hierarchy builder with high precision .
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer

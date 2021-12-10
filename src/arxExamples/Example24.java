@@ -33,8 +33,7 @@ import org.deidentifier.arx.criteria.KAnonymity;
 import cern.colt.Arrays;
 
 /**
- * This class implements examples on how to directly use empty and functional
- * hierarchies.
+ * This class implements examples on how to directly use empty and functional hierarchies.
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer

@@ -40,7 +40,7 @@ import org.deidentifier.arx.risk.RiskModelSampleRisks;
 import org.deidentifier.arx.risk.RiskModelSampleUniqueness;
 
 /**
- * This class implements an example of how to perform risk analyses with the API
+ * This class implements an example of how to perform risk analysis with the API
  *
  * @author Fabian Prasser
  * @author Florian Kohlmayer
