@@ -1,13 +1,15 @@
-# ARX Developer Tutorials 
+# ARX API Tutorials 
 
 This is a spearated repository for [ARX](https://github.com/arx-deidentifier/arx) examples. ARX is an open source data anonymization software. These examples can be used as a  developer tutorial to help get into the ARX code and the data anonymization topic.
 
-**Getting started:**
+## Getting started:
 
-1. Clone or download this repository
-2. Open eclipse, create a new java project, then point to the downloaded folder
+### To compile the examples that come with [ARX](https://github.com/arx-deidentifier/arx)
+
+ 1. Clone or download this repository
+ 2. Open eclipse, create a new java project, then point to the downloaded folder
    - note you need to uncheck default location
-3. In eclipse, open src>arxExample>Example01.java and run as a java application
+ 3. In eclipse, open src>arxExample>Example01.java and run as a java application
    - you may need to right click on the project then click run as a java application
    - in case classn Example01 not found error, you may need to add arx jar file:
      - right click on arxExamples project> Build path>Configure build path> Libraries
@@ -49,7 +51,22 @@ You should get this output:
                 [*, male, 81***]
                 [*, male, 81***]                  
 
-**List of examples:**
+### Compiling as a standalone 
+
+Use these command-lines (tested on windows bash terminal):
+
+                  # first build the class files, note that the order of the java files is important
+                  javac -cp libs/arx-3.9-main.jar arxExamples/ExampleUtils.java arxExamples/Example01.java
+                  
+                  # Then run the class file, notice that for windows terminal you should use ; instead of : 
+                  java -cp libs/arx-3.9-main.jar:"/c/<fullPath>/arxExamples" Example01                                  
+   
+                  # Note, the path is important e.g. if the three files in a folder, then run this commands from inside the folder
+                  javac -cp arx-3.9-main.jar ExampleUtils.java Example01.java
+                  java -cp arx-3.9-main.jar Example01                                  
+
+
+## List of examples:
 
 TODO: organize them to different groups e.g. I/O, anonymization models, hierarchy, statistics, metrics, ... etc
 
